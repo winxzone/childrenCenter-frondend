@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #fff;
+    font-family: "JetBrains Mono", monospace;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header__logo {
+    width: 300px;
+    margin-top: 17px;
+    margin-bottom: 7px;
+    z-index: 1;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header__list li {
+    position: relative;
+    width: 150px;
+}
+
+.header__list li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+    color: #ffffff; /* цвет текста */
+    display: block;
+    text-align: center;
+}
+
+.header__list li:nth-child(1) a {
+    background-color: #e75b5b; /* цвет фона для первого элемента */
+    color: #ffc487;
+}
+
+.header__list li:nth-child(2) a {
+    background-color: #ffa94f; /* цвет фона для второго элемента */
+    color: #fffbc9;
+}
+
+.header__list li:nth-child(3) a {
+    background-color: #fff255; /* цвет фона для третьего элемента */
+    color: #90b44b;
+}
+
+.header__list li:nth-child(4) a {
+    background-color: #b8e75b; /* цвет фона для четвертого элемента */
+    color: #54bbba;
+}
+
+.header__list li:nth-child(5) a {
+    background-color: #5be7ce; /* цвет фона для пятого элемента */
+    color: #5091e9;
+}
+
+.header__background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300%;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.header__background__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.header__background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* .btn {
+    margin-top: 20px;
+    z-index: 1;
+} */
